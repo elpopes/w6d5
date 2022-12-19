@@ -39,6 +39,8 @@ class CatsController < ApplicationController
         end
     end
 
+    private
+
     def cat_params
         params.require(:book).permit(:birth_date, :color, :description, :name, :sex)
     end
